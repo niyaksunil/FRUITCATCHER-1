@@ -32,6 +32,16 @@ function setup() {
 // calling the functions of Game()
   game.getState();
   game.start();
+
+  // updating the playerCount & gameState
+  if (playerCount === 2) {
+    game.update(1);
+  }
+
+  if (gameState === 1) {
+    clear(); 
+    game.play();
+  }
 }
 
 function draw() {
